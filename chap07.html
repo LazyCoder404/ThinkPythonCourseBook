@@ -641,7 +641,7 @@ the variable depends on the old.</p>
 </div>
 <p>This statement means “get the current value of <code class="docutils literal notranslate"><span class="pre">x</span></code>, add one, and assign the result back to <code class="docutils literal notranslate"><span class="pre">x</span></code>.”</p>
 <p>If you try to update a variable that doesn’t exist, you get an error, because Python evaluates the expression on the right before it assigns a value to the variable on the left.</p>
-<div class="cell docutils container">
+<div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
@@ -900,7 +900,7 @@ If returns <code class="docutils literal notranslate"><span class="pre">True</sp
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">uses_only</span></code> converts <code class="docutils literal notranslate"><span class="pre">word</span></code> and <code class="docutils literal notranslate"><span class="pre">letters</span></code> to lowercase, so it works with any combination of cases.</p>
+<p><code class="docutils literal notranslate"><span class="pre">uses_any</span></code> converts <code class="docutils literal notranslate"><span class="pre">word</span></code> and <code class="docutils literal notranslate"><span class="pre">letters</span></code> to lowercase, so it works with any combination of cases.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">uses_any</span><span class="p">(</span><span class="s1">&#39;Banana&#39;</span><span class="p">,</span> <span class="s1">&#39;AEIOU&#39;</span><span class="p">)</span>
