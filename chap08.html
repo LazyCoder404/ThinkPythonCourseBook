@@ -1098,7 +1098,7 @@ Suppose we want to find the first mention of Mina Murray in the book, but we are
 We can use the following pattern, which matches either name.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;Mina|Murray&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;Mina|Murray&#39;</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">find_first</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
 <span class="n">result</span><span class="o">.</span><span class="n">string</span>
 </pre></div>
@@ -1307,8 +1307,6 @@ A rule that specifies the requirements a string has to meet to constitute a matc
 Replacement of a string, or part of a string, with another string.</p>
 <p><strong>shell command:</strong>
 A statement in a shell language, which is a language used to interact with an operating system.</p>
-<p><strong>raw string:</strong>
-A Python string that is preceded by the letter <code class="docutils literal notranslate"><span class="pre">r</span></code>, which indicates that backslashes that appear in the string should not be considered part of a special sequence.</p>
 </section>
 <section id="exercises">
 <h2><span class="section-number">8.12. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
@@ -1339,7 +1337,7 @@ For example, try asking:</p>
 <li><p>Write a Python regular expression that matches a full name with any common title like <code class="docutils literal notranslate"><span class="pre">Mr</span></code> or <code class="docutils literal notranslate"><span class="pre">Mrs</span></code> followed by any number of names beginning with capital letters, possibly with hyphens between some names.</p></li>
 </ul>
 <p>And if you want to see something more complicated, try asking for a regular expression that matches any legal URL.</p>
-<p>A regular expression often has the letter <code class="docutils literal notranslate"><span class="pre">r</span></code> before the quotation mark, which indicates that it is a <strong>raw string</strong>.
+<p>A regular expression often has the letter <code class="docutils literal notranslate"><span class="pre">r</span></code> before the quotation mark, which indicates that it is a “raw string”.
 For more information, ask a virtual assistant, “What is a raw string in Python?”</p>
 </section>
 <section id="exercise">
@@ -1371,7 +1369,8 @@ Write a function called <code class="docutils literal notranslate"><span class="
 Nevertheless, in the introduction of an English translation of the book, the writer Umberto Eco confesses that he found the book to be “one of the most badly written novels of all time”.</p>
 <p>In particular, he says it is “shameless in its repetition of the same adjective,” and mentions in particular the number of times “its characters either shudder or turn pale.”</p>
 <p>To see whether his objection is valid, let’s count the number number of lines that contain the word <code class="docutils literal notranslate"><span class="pre">pale</span></code> in any form, including <code class="docutils literal notranslate"><span class="pre">pale</span></code>, <code class="docutils literal notranslate"><span class="pre">pales</span></code>, <code class="docutils literal notranslate"><span class="pre">paled</span></code>, and <code class="docutils literal notranslate"><span class="pre">paleness</span></code>, as well as the related word <code class="docutils literal notranslate"><span class="pre">pallor</span></code>.
-Use a single regular expression that matches all of these words and no others.</p>
+Use a single regular expression that matches any of these words.
+As an additional challenge, make sure that it doesn’t match any other words, like <code class="docutils literal notranslate"><span class="pre">impale</span></code> – you might want to ask a virtual assistant for help.</p>
 <p><a class="reference external" href="https://allendowney.github.io/ThinkPython/index.html">Think Python: 3rd Edition</a></p>
 <p>Copyright 2024 <a class="reference external" href="https://allendowney.com">Allen B. Downey</a></p>
 <p>Code license: <a class="reference external" href="https://mit-license.org/">MIT License</a></p>
