@@ -572,7 +572,7 @@ For example, the bracket operator indexes an element.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;reversed at 0x7f114c1217b0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;reversed at 0x7f23a9a32b60&gt;
 </pre></div>
 </div>
 </div>
@@ -999,7 +999,7 @@ We’ll use <code class="docutils literal notranslate"><span class="pre">zip</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;zip at 0x7f1136705b80&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;zip at 0x7f23a9a7bdc0&gt;
 </pre></div>
 </div>
 </div>
@@ -1104,7 +1104,7 @@ For example, here’s how we can make a dictionary that maps from each letter to
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;enumerate at 0x7f114c127640&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;enumerate at 0x7f23a808afc0&gt;
 </pre></div>
 </div>
 </div>
@@ -1333,7 +1333,7 @@ We will see more!</p>
 <p>Lists, dictionaries and tuples are <strong>data structures</strong>.
 In this chapter we are starting to see compound data structures, like lists of tuples, or dictionaries that contain tuples as keys and lists as values.
 Compound data structures are useful, but they are prone to errors caused when a data structure has the wrong type, size, or structure.
-For example, if a function expects a list if integers and you give it a plain old integer
+For example, if a function expects a list of integers and you give it a plain old integer
 (not in a list), it probably won’t work.</p>
 <p>To help debug these kinds of errors, I wrote a module called <code class="docutils literal notranslate"><span class="pre">structshape</span></code> that provides a function, also called <code class="docutils literal notranslate"><span class="pre">structshape</span></code>, that takes any kind of data structure as an argument and returns a string that summarizes its structure.
 You can download it from
@@ -1495,7 +1495,7 @@ But that is not always true.</p>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">76</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">77</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">t</span><span class="p">:</span> <span class="s1">&#39;this tuple contains two lists&#39;</span><span class="p">}</span>
         <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;c&#39;</span><span class="p">}</span>
         <span class="n">t</span> <span class="o">=</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
